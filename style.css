@@ -1,0 +1,392 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: rgba(135, 206, 235, 0.1);
+	font-family: 'Poppins';
+	margin: 0;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	position: fixed;
+	top:0%;
+}
+
+.banner, img {
+	height: 150px;
+	width: 100%;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 20px;
+	background-color: skyblue;
+}
+
+.menu span, button {
+	font-size: larger;
+	font-weight: bolder;
+}
+
+button {
+	top:0%;
+}
+
+#presentation {
+	min-height: 560px;
+	margin: auto;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	"photo1 photo2 ."
+	"news camme .";
+	margin-top: 150px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.photo1 {
+	grid-area: photo1;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.photo1 img {
+	height: 250px;
+	width: auto;
+}
+
+.photo1 p, .photo2 p {
+	text-align: justify;
+	line-height: 30px;
+}
+
+.photo2 {
+	grid-area: photo2;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.photo2 img {
+	height: 250px;
+	width: auto;
+}
+
+.news {
+	grid-area: news;
+}
+
+.news img {
+	height: 50px;
+	width: 50px;
+	float: right;
+}
+.camme {
+	grid-area: camme;
+	text-align: justify;
+	line-height: 30px;
+}
+.candidat img {
+	height: auto;
+}
+#pied
+{
+	min-height: 200px;
+	width: 100%;
+	margin:auto;
+}
+
+.Adresse {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 10px;
+}
+
+hr {
+	border: 5px slateblue solid;
+}
+
+.rs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 10px;
+	background-color: rgb(70, 130, 180);
+}
+
+.rs img {
+	height: 25px;
+	width: 25px;
+	margin: 16px;
+}
+
+.rs h3 {
+	margin: 16px 0;
+}
+
+#faireundon {
+	width: 30%;
+	margin: 0 auto;
+}
+
+#faireundon img {
+	height: 300px;
+	width: 250px;
+}
+
+#faireundon label, #faireundon input, #faireundon button {
+	display: block;
+	padding: 20px;
+	margin: 10px;
+	width: 100%;
+}
+
+#faireundon input, #faireundon button {
+	border-radius: 10px;
+}
+
+form img {
+	width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		position: fixed;
+		top:0%;
+	}
+	
+	.banner, img {
+		height: 150px;
+		width: 100%;
+	}
+	
+	.menu {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		background-color: skyblue;
+		width: 100%;
+	}
+	
+	.menu span, button {
+		font-size: 10px;
+	}
+	
+	button {
+		font-size: 15px;
+		width: 20%;
+	}
+	
+	#presentation {
+		min-height: 560px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	
+	.photo1, .photo2 {
+		height: 40%;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.photo1 img{
+		height: auto;
+		width: 100%;
+	}
+	
+	.photo1 p, .photo2 p {
+		text-align: justify;
+		line-height: 30px;
+	}
+	
+	.photo2 img {
+		height: auto;
+		width: 100%;
+	}
+	
+	.news img {
+		height: 50px;
+		width: 50px;
+		float: right;
+	}
+	.camme {
+		text-align: justify;
+		line-height: 30px;
+	}
+	
+	#pied
+	{
+		min-height: 200px;
+		width: 100%;
+		margin:auto;
+	}
+	
+	.Adresse {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	hr {
+		border: 5px slateblue solid;
+	}
+	
+	.rs {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		background-color: rgb(70, 130, 180);
+	}
+	
+	.rs img {
+		height: 25px;
+		width: 25px;
+		margin: 16px;
+	}
+	
+	.rs h3 {
+		margin: 16px 0;
+	}	
+	
+}
+
+@media screen and (max-width: 980px) {
+	.banner, img {
+		height: 150px;
+		width: 100%;
+	}
+	
+	.menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 20px;
+		background-color: skyblue;
+		width: 100%;
+	}
+	
+	.menu span {
+		font-size: larger;
+		font-weight: bolder;
+	}
+	
+	button {
+		font-size: larger;
+		font-weight: bolder;
+		top:0%;
+	}
+	
+	#presentation {
+		min-height: 560px;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 150px;
+	}
+	
+	.photo1 img, .photo2 img {
+		height: 500px;
+		width: 100%;
+	}
+	
+	.photo1, .photo2 {
+		grid-area: photo2;
+		height: 40%;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 10px;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+	
+	.news {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	.news img {
+		height: 50px;
+		width: 50px;
+		float: right;
+	}
+	.camme, .membre {
+		text-align: justify;
+		line-height: 30px;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	.candidat {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	.candidat img {
+		height: 500px;
+	}
+	#pied
+	{
+		min-height: 200px;
+		width: 100%;
+	}
+	
+	.Adresse {
+		display: flex;
+		flex-direction: column;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+	
+	 .partcam {
+		height: 600px;
+		width: 100%;
+	} 
+
+	.logo {
+		height: 250px;
+		width: 50%;
+	}
+	hr {
+		border: 5px slateblue solid;
+	}
+	
+	.rs {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		gap: 10px;
+		background-color: rgb(70, 130, 180);
+	}
+	
+	.rs img {
+		height: 25px;
+		width: 25px;
+		margin: 16px;
+	}
+	
+	.rs h3 {
+		margin: 16px 0;
+	}
+}
